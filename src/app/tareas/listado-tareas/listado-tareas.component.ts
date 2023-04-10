@@ -21,4 +21,8 @@ export class ListadoTareasComponent {
   delete(nombre:Tarea){
     this.tareasService.deleteTarea(nombre.tarea)
   }
+
+  complete(nombre:Tarea){
+    this.tareasService.completeTarea(nombre.tarea)
+  }
 }
